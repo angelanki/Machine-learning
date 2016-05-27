@@ -1,0 +1,42 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fnil\fcharset134 PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl360\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Machine Learning_HW1\
+\
+1. fixed acidity, volatile acidity, citric acid, chlorides, free sulfur dioxide, total sulfur dioxide\
+\
+2. accuracy = (# of correctly classified instances)/ total number of instances = 1179/1890 = 62.381%\
+explanation: the percentage of correctly classified instances in total number of instances.\
+A ZeroR classifier simply assigns every value to the most common class. ZeroR simply predicts the majority category. Given a certain data set, we can use ZeroR to find out what the minimum performance is we may expect.\
+\
+3. alcohol, the bigger the value of alcohol is, the better the wine quality is.\
+\
+4. 10-fold cross validation is breaking data into 10 sets of size n/10, then training on 9 datasets and test on 1, and then repeating 10 times and taking a mean accuracy.\
+\
+main reason: the error(e.g. root mean squared error) on the training set is not a useful estimator of model performance and thus the error on the test data set does not properly represent the assessment of model performance. This may be because there is not enough data available or there is not a good distribution and spread of data to partition it into separate training and test sets.\
+\
+Why important: Cross-validation gives an insight on how the model will generalize to an independent dataset. In addition, when further samples are hazardous, costly or impossible to collect, cross-validation will be more important. It also can fit prediction error to correct for the optimistic nature of training error and derive a more accurate estimate of model prediction performance.\
+\
+5. "J48 -C 0.25 -M 2\'94\
+85.9788%\
+\
+6. I choose the model by comparing accuracy, root mean squared error and relative absolute error. The higher the accuracy is and lower the error is, the better the performance of model is. I also found that bigger folds means accuracy will be closer to 100%. So choose 10-fold cross validation.\
+\
+7. Agree. What we are doing now is to understand our models deeper and better. No mater what kinds of tools we use or how many datasets we collect. Category is part of the whole process instead of the integer. We constructed a model to make progress and obtain insight based on our knowledge.\
+\
+8. 
+\f1 \'a1\'be
+\f0 Classifier A: DecisionStump\
+Classifier B: NNge-G5-I5\
+wine_acc(A) + car_acc(B) \'96 wine_acc(B) \'96 car_acc(A) = 80.8% + 90.1% - 87.6% - 70.5% = 12.8%
+\f1 \'a1\'bf
+\f0 \
+Based on the accuracy. Choose the classifiers which can compute better accuracy. \
+\
+9. Car task has four classes as output space. They are, inaccuracy, accuracy, good and not good. Wine task has two classes which are good and bad.\
+\
+\
+}
